@@ -8,9 +8,9 @@ def romanize(tal):
         raise ValueError('can not encode negative number')
 
     for number in bord:
-        while tal - bord[1] >= 0:
-            tal -= bord[1]
-            result += bord[0]
+        while tal - number[1] >= 0:
+            tal -= number[1]
+            result += number[0]
 
 
     return result
